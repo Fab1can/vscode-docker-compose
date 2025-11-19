@@ -83,15 +83,26 @@ export class Project {
 
     async _getContainers(): Promise<Container[]> {
         const result = this.composeExecutor.getPs2();
-        return result.map((container) => {
-            return new Container(
+        //controlla se result è un array
+        if (Array.isArray(result)) {
+            return result.map((container) => {
+                return new Container(
+                    this.dockerExecutor,
+                    container.Name,
+                    container.Command,
+                    container.Status,
+                    []
+                );
+            });
+        } else {
+            return [new Container(
                 this.dockerExecutor,
-                container.Name,
-                container.Command,
-                container.Status,
+                result["Name"],
+                result["Command"],
+                result["Status"],
                 []
-            );
-        });
+            )];
+        }
     }
 
     public filterServiceContainers(serviceName: string, containers: Container[]): Container[] {

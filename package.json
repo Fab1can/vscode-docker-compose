@@ -3,8 +3,8 @@
   "displayName": "Docker Compose",
   "description": "Manage Docker Compose services",
   "icon": "images/icon.png",
-  "version": "0.5.1",
-  "publisher": "p1c2u",
+  "version": "0.5.2",
+  "publisher": "fab1can",
   "license": "MIT",
   "engines": {
     "vscode": "^1.74.0"
@@ -19,13 +19,13 @@
     "image"
   ],
   "bugs": {
-    "url": "https://github.com/p1c2u/vscode-docker-compose/issues",
-    "email": "maciag.artur@gmail.com"
+    "url": "https://github.com/fab1can/vscode-docker-compose/issues",
+    "email": "fabio@fab1can.eu"
   },
-  "homepage": "https://github.com/p1c2u/vscode-docker-compose",
+  "homepage": "https://github.com/fab1can/vscode-docker-compose",
   "repository": {
     "type": "git",
-    "url": "https://github.com/p1c2u/vscode-docker-compose.git"
+    "url": "https://github.com/fab1can/vscode-docker-compose.git"
   },
   "activationEvents": [
     "workspaceContains:**/docker-compose.yml",

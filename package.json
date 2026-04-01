@@ -1,6 +1,6 @@
 {
-  "name": "docker-compose",
-  "displayName": "Docker Compose",
+  "name": "docker-compose-fixed",
+  "displayName": "Docker Compose (Fixed)",
   "description": "Manage Docker Compose services",
   "icon": "images/icon.png",
   "version": "0.5.2",
